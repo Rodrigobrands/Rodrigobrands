@@ -121,3 +121,56 @@ window.addEventListener('scroll', () => {
 btnTopo.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
+
+// Validação formulário contato
+const form = document.getElementById('contact-form');
+if(form){
+  const nome = form.nome;
+  const email = form.email;
+  const mensagem = form.mensagem;
+  const successMsg = document.getElementById('form-success');
+
+  function showError(input, message){
+    const small = input.nextElementSibling;
+    small.textContent = message;
+    input.classList.add('error');
+  }
+
+  function clearError(input){
+    const small = input.nextElementSibling;
+    small.textContent = '';
+    input.classList.remove('error');
+  }
+
+  function isEmailValid(email){
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let valid = true;
+
+    if(nome.value.trim().length < 3){
+      showError(nome, 'Por favor, insira um nome válido com ao menos 3 caracteres.');
+      valid = false;
+    } else clearError(nome);
+
+    if(!isEmailValid(email.value.trim())){
+      showError(email, 'Por favor, insira um e-mail válido.');
+      valid = false;
+    } else clearError(email);
+
+    if(mensagem.value.trim().length < 10){
+      showError(mensagem, 'A mensagem deve ter ao menos 10 caracteres.');
+      valid = false;
+    } else clearError(mensagem);
+
+    if(valid){
+      // Simular envio (aqui pode implementar backend)
+      successMsg.textContent = 'Mensagem enviada com sucesso! Obrigado por entrar em contato.';
+      form.reset();
+    } else {
+      successMsg.textContent = '';
+    }
+  });
+}
