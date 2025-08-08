@@ -1,139 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaTech Solutions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaTech Solutions - Início</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">NovaTech <span>Solutions</span></div>
-            <nav class="nav" id="nav-menu">
-                <a href="#hero">Início</a>
-                <a href="#sobre">Sobre Nós</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#contato">Contato</a>
-            </nav>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        </div>
-    </header>
 
-    <!-- Hero -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>Inovando o Futuro da Tecnologia</h1>
-            <p>Soluções inteligentes para impulsionar seu negócio.</p>
-            <a href="#contato" class="btn">Fale Conosco</a>
-        </div>
-    </section>
+<header class="header">
+  <div class="container header-container">
+    <div class="logo"><a href="index.html">NovaTech <span>Solutions</span></a></div>
+    <nav class="nav" id="nav-menu">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+  </div>
+</header>
 
-    <!-- Sobre Nós -->
-    <section class="sobre" id="sobre">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>A NovaTech Solutions é especializada em criar soluções tecnológicas inovadoras que ajudam empresas a se destacarem no mercado digital. Nossa missão é transformar ideias em realidade, com foco em qualidade, eficiência e design moderno.</p>
-        </div>
-    </section>
+<main>
 
-    <!-- Serviços -->
-    <section class="servicos" id="servicos">
-        <div class="container">
-            <h2>Serviços</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="icon">💻</div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Sites modernos, responsivos e otimizados para SEO.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">📱</div>
-                    <h3>Aplicativos Mobile</h3>
-                    <p>Apps rápidos e intuitivos para Android e iOS.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">☁️</div>
-                    <h3>Serviços em Nuvem</h3>
-                    <p>Infraestrutura segura e escalável para o seu negócio.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <h1 class="fade-in">Inovando o Futuro da Tecnologia</h1>
+      <p class="fade-in delay-1">Soluções inteligentes para impulsionar seu negócio.</p>
+      <a href="contato.html" class="btn btn-neon fade-in delay-2">Fale Conosco</a>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
 
-    <!-- Portfólio -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2>Portfólio</h2>
-            <div class="grid">
-                <div class="item">
-                    <img src="https://via.placeholder.com/400x250" alt="Projeto 1">
-                    <p>Plataforma de e-commerce moderna</p>
-                </div>
-                <div class="item">
-                    <img src="https://via.placeholder.com/400x250" alt="Projeto 2">
-                    <p>Aplicativo de delivery personalizado</p>
-                </div>
-                <div class="item">
-                    <img src="https://via.placeholder.com/400x250" alt="Projeto 3">
-                    <p>Dashboard de análise de dados</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Sobre Resumo -->
+  <section class="sobre resumo" id="sobre-resumo">
+    <div class="container fade-in-up">
+      <h2>Quem Somos</h2>
+      <p>A NovaTech Solutions entrega inovação e tecnologia de ponta para transformar o seu negócio digital. Com expertise e paixão, criamos soluções sob medida para você.</p>
+      <a href="sobre.html" class="btn btn-outline">Saiba Mais</a>
+    </div>
+  </section>
 
-    <!-- Depoimentos -->
-    <section class="depoimentos" id="depoimentos">
-        <div class="container">
-            <h2>Depoimentos</h2>
-            <div class="comentarios">
-                <div class="comentario">
-                    <p>"A NovaTech transformou nossa presença online! Atendimento impecável e resultado incrível."</p>
-                    <span>- Ana Souza</span>
-                </div>
-                <div class="comentario">
-                    <p>"Serviço rápido, profissional e com qualidade acima do esperado. Recomendo!"</p>
-                    <span>- João Pereira</span>
-                </div>
-                <div class="comentario">
-                    <p>"A equipe entende exatamente o que precisamos e entrega soluções inovadoras."</p>
-                    <span>- Carla Mendes</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Serviços Resumo -->
+  <section class="servicos resumo" id="servicos-resumo">
+    <div class="container">
+      <h2>O Que Oferecemos</h2>
+      <div class="cards">
+        <article class="card hover-3d fade-in-up delay-1">
+          <div class="icon">💻</div>
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites responsivos, seguros e modernos para a sua empresa.</p>
+        </article>
+        <article class="card hover-3d fade-in-up delay-2">
+          <div class="icon">📱</div>
+          <h3>Apps Mobile</h3>
+          <p>Aplicativos intuitivos para Android e iOS que engajam.</p>
+        </article>
+        <article class="card hover-3d fade-in-up delay-3">
+          <div class="icon">☁️</div>
+          <h3>Serviços em Nuvem</h3>
+          <p>Infraestrutura escalável e segura para seu crescimento.</p>
+        </article>
+      </div>
+      <a href="servicos.html" class="btn btn-outline">Ver Todos Serviços</a>
+    </div>
+  </section>
 
-    <!-- Contato -->
-    <section class="contato" id="contato">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <form>
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
+  <!-- Portfólio Resumo -->
+  <section class="portfolio resumo" id="portfolio-resumo">
+    <div class="container">
+      <h2>Nosso Trabalho</h2>
+      <div class="grid">
+        <article class="item hover-3d fade-in-up delay-1" tabindex="0" data-img="https://via.placeholder.com/800x500?text=Projeto+1" data-desc="Plataforma e-commerce moderna e escalável.">
+          <img src="https://via.placeholder.com/400x250?text=Projeto+1" alt="Projeto 1" />
+          <p>Plataforma e-commerce moderna</p>
+        </article>
+        <article class="item hover-3d fade-in-up delay-2" tabindex="0" data-img="https://via.placeholder.com/800x500?text=Projeto+2" data-desc="Aplicativo delivery personalizado para clientes exigentes.">
+          <img src="https://via.placeholder.com/400x250?text=Projeto+2" alt="Projeto 2" />
+          <p>App delivery personalizado</p>
+        </article>
+        <article class="item hover-3d fade-in-up delay-3" tabindex="0" data-img="https://via.placeholder.com/800x500?text=Projeto+3" data-desc="Dashboard inteligente de análise de dados em tempo real.">
+          <img src="https://via.placeholder.com/400x250?text=Projeto+3" alt="Projeto 3" />
+          <p>Dashboard análise de dados</p>
+        </article>
+      </div>
+      <a href="portfolio.html" class="btn btn-outline">Veja Mais Projetos</a>
+    </div>
+  </section>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 NovaTech Solutions. Todos os direitos reservados.</p>
-            <div class="social">
-                <a href="#">🌐</a>
-                <a href="#">📘</a>
-                <a href="#">🐦</a>
-            </div>
-        </div>
-    </footer>
+  <!-- Depoimentos -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h2>O Que Dizem Nossos Clientes</h2>
+      <div class="carousel" id="carousel">
+        <article class="comentario active">
+          <p>"A NovaTech transformou nossa presença online! Atendimento impecável e resultado incrível."</p>
+          <span>- Ana Souza</span>
+        </article>
+        <article class="comentario">
+          <p>"Serviço rápido, profissional e com qualidade acima do esperado. Recomendo!"</p>
+          <span>- João Pereira</span>
+        </article>
+        <article class="comentario">
+          <p>"A equipe entende exatamente o que precisamos e entrega soluções inovadoras."</p>
+          <span>- Carla Mendes</span>
+        </article>
+      </div>
+      <div class="carousel-controls">
+        <button id="prev">‹</button>
+        <button id="next">›</button>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Contato Resumo -->
+  <section class="contato resumo" id="contato-resumo">
+    <div class="container">
+      <h2>Quer Conversar?</h2>
+      <p>Nos envie uma mensagem e responderemos o mais breve possível.</p>
+      <a href="contato.html" class="btn btn-neon">Entrar em Contato</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-container">
+    <p>&copy; 2025 NovaTech Solutions. Todos os direitos reservados.</p>
+    <div class="social">
+      <a href="#" aria-label="Site">🌐</a>
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
+  </div>
+</footer>
+
+<button id="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
