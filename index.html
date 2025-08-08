@@ -13,7 +13,7 @@
   <div class="container header-container">
     <div class="logo"><a href="index.html">NovaTech <span>Solutions</span></a></div>
     <nav class="nav" id="nav-menu">
-      <a href="index.html">Início</a>
+      <a href="index.html" class="active">Início</a>
       <a href="sobre.html">Sobre Nós</a>
       <a href="servicos.html">Serviços</a>
       <a href="portfolio.html">Portfólio</a>
@@ -25,105 +25,78 @@
 
 <main>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
+  <section class="hero hero-home">
     <div class="container hero-content">
-      <h1 class="fade-in">Inovando o Futuro da Tecnologia</h1>
-      <p class="fade-in delay-1">Soluções inteligentes para impulsionar seu negócio.</p>
-      <a href="contato.html" class="btn btn-neon fade-in delay-2">Fale Conosco</a>
-    </div>
-    <div class="hero-bg"></div>
-  </section>
-
-  <!-- Sobre Resumo -->
-  <section class="sobre resumo" id="sobre-resumo">
-    <div class="container fade-in-up">
-      <h2>Quem Somos</h2>
-      <p>A NovaTech Solutions entrega inovação e tecnologia de ponta para transformar o seu negócio digital. Com expertise e paixão, criamos soluções sob medida para você.</p>
-      <a href="sobre.html" class="btn btn-outline">Saiba Mais</a>
+      <h1 class="fade-in">Transformando seu futuro com tecnologia</h1>
+      <p class="fade-in delay-1">Soluções inovadoras e personalizadas para o seu negócio crescer.</p>
+      <a href="contato.html" class="btn-neon fade-in delay-2">Fale Conosco</a>
     </div>
   </section>
 
-  <!-- Serviços Resumo -->
-  <section class="servicos resumo" id="servicos-resumo">
-    <div class="container">
-      <h2>O Que Oferecemos</h2>
-      <div class="cards">
-        <article class="card hover-3d fade-in-up delay-1">
-          <div class="icon">💻</div>
-          <h3>Desenvolvimento Web</h3>
-          <p>Sites responsivos, seguros e modernos para a sua empresa.</p>
-        </article>
-        <article class="card hover-3d fade-in-up delay-2">
-          <div class="icon">📱</div>
-          <h3>Apps Mobile</h3>
-          <p>Aplicativos intuitivos para Android e iOS que engajam.</p>
-        </article>
-        <article class="card hover-3d fade-in-up delay-3">
-          <div class="icon">☁️</div>
-          <h3>Serviços em Nuvem</h3>
-          <p>Infraestrutura escalável e segura para seu crescimento.</p>
-        </article>
-      </div>
-      <a href="servicos.html" class="btn btn-outline">Ver Todos Serviços</a>
+  <section class="container conteudo sobre fade-in-up">
+    <h2>Sobre Nós</h2>
+    <p>A NovaTech Solutions é uma empresa dedicada a desenvolver soluções tecnológicas modernas, inovadoras e eficientes para clientes que buscam se destacar no mercado digital.</p>
+  </section>
+
+  <section class="container conteudo servicos fade-in-up delay-1">
+    <h2>Serviços</h2>
+    <div class="cards">
+      <article class="card hover-3d">
+        <div class="icon">💻</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites responsivos e modernos que impressionam e convertem visitantes em clientes.</p>
+      </article>
+      <article class="card hover-3d">
+        <div class="icon">📱</div>
+        <h3>Aplicativos Mobile</h3>
+        <p>Apps intuitivos para Android e iOS, com foco em experiência e desempenho.</p>
+      </article>
+      <article class="card hover-3d">
+        <div class="icon">☁️</div>
+        <h3>Serviços em Nuvem</h3>
+        <p>Infraestrutura segura e escalável para suportar seu crescimento digital.</p>
+      </article>
     </div>
   </section>
 
-  <!-- Portfólio Resumo -->
-  <section class="portfolio resumo" id="portfolio-resumo">
-    <div class="container">
-      <h2>Nosso Trabalho</h2>
-      <div class="grid">
-        <article class="item hover-3d fade-in-up delay-1" tabindex="0" data-img="https://via.placeholder.com/800x500?text=Projeto+1" data-desc="Plataforma e-commerce moderna e escalável.">
-          <img src="https://via.placeholder.com/400x250?text=Projeto+1" alt="Projeto 1" />
-          <p>Plataforma e-commerce moderna</p>
-        </article>
-        <article class="item hover-3d fade-in-up delay-2" tabindex="0" data-img="https://via.placeholder.com/800x500?text=Projeto+2" data-desc="Aplicativo delivery personalizado para clientes exigentes.">
-          <img src="https://via.placeholder.com/400x250?text=Projeto+2" alt="Projeto 2" />
-          <p>App delivery personalizado</p>
-        </article>
-        <article class="item hover-3d fade-in-up delay-3" tabindex="0" data-img="https://via.placeholder.com/800x500?text=Projeto+3" data-desc="Dashboard inteligente de análise de dados em tempo real.">
-          <img src="https://via.placeholder.com/400x250?text=Projeto+3" alt="Projeto 3" />
-          <p>Dashboard análise de dados</p>
-        </article>
-      </div>
-      <a href="portfolio.html" class="btn btn-outline">Veja Mais Projetos</a>
+  <section class="container conteudo portfolio fade-in-up delay-2">
+    <h2>Portfólio</h2>
+    <div class="grid">
+      <article class="item hover-3d" tabindex="0" data-img="https://via.placeholder.com/900x600?text=Projeto+1" data-desc="Plataforma e-commerce moderna e escalável, construída com tecnologias React e Node.js.">
+        <img src="https://via.placeholder.com/450x300?text=Projeto+1" alt="Projeto 1" />
+        <p>Plataforma e-commerce moderna</p>
+      </article>
+      <article class="item hover-3d" tabindex="0" data-img="https://via.placeholder.com/900x600?text=Projeto+2" data-desc="Aplicativo delivery personalizado para Android e iOS, com integração em tempo real.">
+        <img src="https://via.placeholder.com/450x300?text=Projeto+2" alt="Projeto 2" />
+        <p>App delivery personalizado</p>
+      </article>
+      <article class="item hover-3d" tabindex="0" data-img="https://via.placeholder.com/900x600?text=Projeto+3" data-desc="Dashboard inteligente para análise e visualização de dados em tempo real.">
+        <img src="https://via.placeholder.com/450x300?text=Projeto+3" alt="Projeto 3" />
+        <p>Dashboard análise de dados</p>
+      </article>
     </div>
   </section>
 
-  <!-- Depoimentos -->
-  <section class="depoimentos" id="depoimentos">
-    <div class="container">
-      <h2>O Que Dizem Nossos Clientes</h2>
-      <div class="carousel" id="carousel">
-        <article class="comentario active">
-          <p>"A NovaTech transformou nossa presença online! Atendimento impecável e resultado incrível."</p>
-          <span>- Ana Souza</span>
-        </article>
-        <article class="comentario">
-          <p>"Serviço rápido, profissional e com qualidade acima do esperado. Recomendo!"</p>
-          <span>- João Pereira</span>
-        </article>
-        <article class="comentario">
-          <p>"A equipe entende exatamente o que precisamos e entrega soluções inovadoras."</p>
-          <span>- Carla Mendes</span>
-        </article>
-      </div>
-      <div class="carousel-controls">
-        <button id="prev">‹</button>
-        <button id="next">›</button>
-      </div>
+  <section class="container conteudo depoimentos fade-in-up delay-3">
+    <h2>Depoimentos</h2>
+    <div class="comentario active" id="dep1">"A NovaTech revolucionou nosso site! Mais visitas e vendas em pouco tempo." - Ana M.</div>
+    <div class="comentario" id="dep2">"Equipe super profissional e dedicada, recomendo para qualquer empresa." - Carlos T.</div>
+    <div class="comentario" id="dep3">"A consultoria em nuvem deles nos ajudou a escalar o negócio com segurança." - Fernanda L.</div>
+    <div class="depoimentos-controls">
+      <button aria-label="Depoimento 1" data-target="dep1" class="active">1</button>
+      <button aria-label="Depoimento 2" data-target="dep2">2</button>
+      <button aria-label="Depoimento 3" data-target="dep3">3</button>
     </div>
   </section>
 
-  <!-- Contato Resumo -->
-  <section class="contato resumo" id="contato-resumo">
-    <div class="container">
-      <h2>Quer Conversar?</h2>
-      <p>Nos envie uma mensagem e responderemos o mais breve possível.</p>
-      <a href="contato.html" class="btn btn-neon">Entrar em Contato</a>
+  <!-- Modal Portfólio -->
+  <div class="modal" id="modal-portfolio" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar modal">&times;</button>
+      <img src="" alt="" id="modal-img" />
+      <p id="modal-desc"></p>
     </div>
-  </section>
+  </div>
 
 </main>
 
